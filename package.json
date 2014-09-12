@@ -1,0 +1,30 @@
+{
+  "name": "Nevermore",
+  "main": "index.html",
+  "description": "shadowsocks client with GUI",
+  "version": "0.5.0",
+  "keywords": [ "shadowsocks", "node-webkit" ],
+  "single-instance": false,
+  "dependencies": {
+      "shadowsocks": "*"
+  },
+  "window": {
+    "icon": "img/icon.png",
+    "frame": false,
+    "toolbar": false,
+    "width": 300,
+    "height": 400,
+    "position": "mouse",
+    "min_width": 300,
+    "min_height": 400,
+    "max_width": 300,
+    "max_height": 400
+  },
+  "js-flags": "--expose-gc",
+  "licenses": [
+  {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }
+  ]
+}

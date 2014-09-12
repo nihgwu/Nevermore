@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	color: #fff;
+  -webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+
+#header {
+	height: 48px;
+	background-color: #222;
+	padding: 6px 6px 6px 66px;
+	border-bottom: #000 3px solid;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: #222;
+  -webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+#footer div {
+	margin: 6px;
+	font-size: 13px;
+	text-align: right;
+}
+
+#logo {
+	position: absolute;
+	left: 6px;
+	width: 48px;
+	height: 48px;
+}
+
+#title {
+	margin: 0px;
+}
+#title h4 {
+	font-size: 26px;
+	margin: 0px;
+}
+#title span {
+	font-size: 12px;
+	color: #888;
+}
+
+#toolbar {
+	position: absolute;
+	right: 6px;
+}
+
+button {
+	color: #fff;
+	background-color: #000;
+	border: #000 1px solid;
+	margin: 0;
+	padding: 5px 10px;
+  -webkit-app-region: no-drag;
+}
+button:focus, input:focus, select:focus {
+	transition:border linear .2s;
+	outline:none;
+	border-color:#fff;
+}
+
+#container {
+	margin: 20px 0;
+	font-size: 14px;
+	background-color: #333;
+	color: #ccc;
+}
+
+.control-group {
+	padding-bottom: 10px;
+}
+.control-group label {
+	display: inline-block;
+	width: 100px;
+	margin-right: 10px;
+	text-align: right;
+}
+.control-group input, .control-group select {
+  -webkit-app-region: no-drag;
+}
+.control-group select {
+	width: 156px;
+}
