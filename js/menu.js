@@ -57,3 +57,11 @@ document.getElementById('closeButton').onclick = function(){
 document.getElementById('debugButton').onclick = function(){
   return win.showDevTools();
 }
+var expanded = false;
+document.getElementById('listButton').onclick = function(){
+  var width = 500;
+  if(expanded)  width = 300;
+  expanded = !expanded;
+  return win.resizeTo(width,400);
+}
+

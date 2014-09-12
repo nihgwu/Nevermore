@@ -3,6 +3,9 @@ body {
 	padding: 0;
 	background-color: #333;
 	color: #fff;
+	width: 600px;
+	overflow: hidden;
+	/*font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";*/
   -webkit-user-select: none;
 	-webkit-app-region: drag;
 }
@@ -53,17 +56,27 @@ body {
 }
 
 button {
-	color: #fff;
+	color: #888;
 	background-color: #000;
 	border: #000 1px solid;
 	margin: 0;
 	padding: 5px 10px;
   -webkit-app-region: no-drag;
 }
-button:focus, input:focus, select:focus {
+button:hover {
+	color: #ccc;
+}
+button:focus, button.focus {
 	transition:border linear .2s;
-	outline:none;
-	border-color:#fff;
+	outline: none;
+	border-color:#ccc;
+	color: #ccc;
+}
+input {
+	padding: 2px;
+	text-indent: 8px;
+	width: 150px;
+
 }
 
 #container {
@@ -87,4 +100,40 @@ button:focus, input:focus, select:focus {
 }
 .control-group select {
 	width: 156px;
+}
+#detail {
+	float: left;
+	width: 300px;
+}
+#list {
+	float: left;
+	margin-left: 20px;
+}
+#list ul {
+	width: 150px;
+	border: #ccc 1px solid;
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+	background-color: #333;
+	list-style-type: none;
+	height: 230px;
+	overflow: scroll;
+}
+#list ul li {
+	padding: 6px;
+}
+#list ul li h4 {
+	font-size: 14px;
+	margin: 2px;
+}
+#list ul li span {
+	font-size: 13px;
+	color: #888;
+}
+#list ul li:nth-child(even) {
+	background-color: #444;
+}
+#list ul li:hover, li.focus {
+	background-color: #888;
 }

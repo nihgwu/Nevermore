@@ -22,16 +22,15 @@
   </header>
   <!-- Content -->
   <section id="container">
-    <div>
+    <div id="detail">
       <div class="control-group">
-          <label for="name">服务器名称</label>
-          <select id="state" class="pure-input-1-2">
-              <option>127.0.0.1</option>
-          </select>
+          <label for="serverName">服务器名称</label>
+          <input id="serverName" type="text" placeholder="服务器名称">
+          <button id="listButton" style="margin-left:-24px;padding:5px">&gt;</button>
       </div>
       <div class="control-group">
-          <label for="name">服务器IP</label>
-          <input id="serverIP" type="serverIP" placeholder="服务器IP">
+          <label for="serverIP">服务器IP</label>
+          <input id="serverIP" type="text" placeholder="服务器IP">
       </div>
       <div class="control-group">
           <label for="serverPort">服务器端口</label>
@@ -51,7 +50,9 @@
       </div>
       <div class="control-group">
           <label for="encrypt">加密方式</label>
-          <select id="encrypt">
+          <input id="encrypt" type="text" value="AES-256-CFB">
+          <button style="margin-left:-24px;padding:5px">&gt;</button>
+          <!--select id="encrypt">
             <option value="aes-256-cfb" selected>AES-256-CFB</option>
             <option value="aes-192-cfb">AES-192-CFB</option>
             <option value="aes-128-cfb">AES-128-CFB</option>
@@ -67,13 +68,59 @@
             <option value="rc4-md5">RC4-MD5</option>
             <option value="seed-cfb">SEED-CFB</option>
             <option value="table">Table</option>
-          </select>
+          </select-->
       </div>
       <div class="control-group">
           <label for="cb" class="pure-checkbox"></label>
-          <button>添加</button>
-          <button>删除</button>
+          <button>启动</button>
+          <button>停止</button>
       </div>
+    </div>
+    <div id="list">
+      <ul>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+        <li>
+          <h4>Server1</h4>
+          <span>127.0.0.1</span>
+        </li>
+      </ul>
+      <button>添加</button>
+      <button>删除</button>
     </div>
   </section>
   <!-- Footer -->

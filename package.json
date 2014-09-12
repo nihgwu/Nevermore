@@ -11,7 +11,7 @@
   "window": {
     "icon": "img/icon.png",
     "frame": false,
-    "toolbar": false,
+    "toolbar": true,
     "width": 300,
     "height": 400,
     "position": "mouse",
