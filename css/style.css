@@ -3,11 +3,14 @@ body {
 	padding: 0;
 	background-color: #333;
 	color: #fff;
-	width: 600px;
+	width: 500px;
 	overflow: hidden;
 	/*font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";*/
   -webkit-user-select: none;
-	-webkit-app-region: drag;
+	-webkit-app-region: no-drag;
+}
+button, input, ul {
+	-webkit-app-region: no-drag;
 }
 
 #header {
@@ -61,7 +64,6 @@ button {
 	border: #000 1px solid;
 	margin: 0;
 	padding: 5px 10px;
-  -webkit-app-region: no-drag;
 }
 button:hover {
 	color: #ccc;
@@ -72,11 +74,16 @@ button:focus, button.focus {
 	border-color:#ccc;
 	color: #ccc;
 }
-input {
-	padding: 2px;
+input, select{
+	padding: 4px;
+	border: 0;
 	text-indent: 8px;
 	width: 150px;
-
+}
+select {
+	-webkit-appearance: none;
+	border-radius: 0;
+	width: 158px;
 }
 
 #container {
@@ -98,15 +105,13 @@ input {
 .control-group input, .control-group select {
   -webkit-app-region: no-drag;
 }
-.control-group select {
-	width: 156px;
-}
+
 #detail {
-	float: left;
+	display: inline-block;
 	width: 300px;
 }
 #list {
-	float: left;
+	display: inline-block;
 	margin-left: 20px;
 }
 #list ul {
@@ -122,6 +127,7 @@ input {
 }
 #list ul li {
 	padding: 6px;
+	cursor: pointer;
 }
 #list ul li h4 {
 	font-size: 14px;
@@ -129,11 +135,11 @@ input {
 }
 #list ul li span {
 	font-size: 13px;
-	color: #888;
+	color: #666;
 }
 #list ul li:nth-child(even) {
 	background-color: #444;
 }
-#list ul li:hover, li.focus {
+#list ul li:hover, .selected {
 	background-color: #888;
 }

@@ -1,17 +1,17 @@
 {
   "name": "Nevermore",
   "main": "index.html",
-  "description": "shadowsocks client with GUI",
-  "version": "0.5.0",
+  "description": "shadowsocks client powered by Nodejs",
+  "version": "0.0.1",
   "keywords": [ "shadowsocks", "node-webkit" ],
   "single-instance": false,
   "dependencies": {
-      "shadowsocks": "*"
+      "shadowsocks": "1.4.3"
   },
   "window": {
     "icon": "img/icon.png",
     "frame": false,
-    "toolbar": true,
+    "toolbar": false,
     "width": 300,
     "height": 400,
     "position": "mouse",

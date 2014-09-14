@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html>
+<html ng-app='app'>
   <head>
     <meta charset="utf-8">
     <meta name="author" content="nihgwu">
     <title>Nevermore</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
-  <body>
+  <body ng-controller="AppCtrl">
   <!-- Header -->
   <header id="header">
     <div id="toolbar">
-      <button id="debugButton">=</button>
-      <button id="closeButton">x</button>
+      <button ng-click="debug()">&para;</button>
+      <button ng-click="close()">&times;</button>
     </div>
     <img id="logo" src="img/icon.png"/>
     <div id="title">
@@ -24,111 +24,78 @@
   <section id="container">
     <div id="detail">
       <div class="control-group">
-          <label for="serverName">服务器名称</label>
-          <input id="serverName" type="text" placeholder="服务器名称">
-          <button id="listButton" style="margin-left:-24px;padding:5px">&gt;</button>
+          <label>服务器名称</label>
+          <input ng-dblclick="edit()" ng-model="current.name" ng-readonly="!editing" placeholder="服务器名称">
+          <button ng-click="expand()" style="margin-left:-24px;padding:5px">&gt;</button>
+          </input>
       </div>
       <div class="control-group">
-          <label for="serverIP">服务器IP</label>
-          <input id="serverIP" type="text" placeholder="服务器IP">
+          <label>服务器IP</label>
+          <input ng-model="current.ip" ng-disabled="!editing" placeholder="服务器IP">
       </div>
       <div class="control-group">
-          <label for="serverPort">服务器端口</label>
-          <input id="serverPort" type="text" placeholder="服务器端口">
+          <label>服务器端口</label>
+          <input ng-model="current.port" ng-disabled="!editing" placeholder="服务器端口">
       </div>
       <div class="control-group">
-          <label for="password">密码</label>
-          <input id="password" type="password" placeholder="密码">
+          <label>密码</label>
+          <input ng-model="current.password" ng-disabled="!editing" type="password" placeholder="密码">
       </div>
       <div class="control-group">
-          <label for="timeout">连接超时</label>
-          <input id="timeout" type="text" placeholder="连接超时">
+          <label>加密方式</label>
+          <select ng-change="method()" ng-model="current.method" ng-disabled="!editing"
+            ng-options="method.value as method.text for method in methods">
+          </select>
       </div>
       <div class="control-group">
-          <label for="proxyPort">代理端口</label>
-          <input id="proxyPort" type="text" placeholder="代理端口">
+          <label>连接超时</label>
+          <input ng-model="setting.timeout" placeholder="连接超时">
       </div>
       <div class="control-group">
-          <label for="encrypt">加密方式</label>
-          <input id="encrypt" type="text" value="AES-256-CFB">
-          <button style="margin-left:-24px;padding:5px">&gt;</button>
-          <!--select id="encrypt">
-            <option value="aes-256-cfb" selected>AES-256-CFB</option>
-            <option value="aes-192-cfb">AES-192-CFB</option>
-            <option value="aes-128-cfb">AES-128-CFB</option>
-            <option value="bf-cfb">BF-CFB (Blowfish)</option>
-            <option value="camellia-256-cfb">CAMELLIA-256-CFB</option>
-            <option value="camellia-192-cfb">CAMELLIA-192-CFB</option>
-            <option value="camellia-128-cfb">CAMELLIA-128-CFB</option>
-            <option value="cast5-cfb">CAST5-cfb</option>
-            <option value="des-cfb">DES-CFB</option>
-            <option value="idea-cfb">IDEA-CFB</option>
-            <option value="rc2-cfb">RC2-CFB</option>
-            <option value="rc4">RC4</option>
-            <option value="rc4-md5">RC4-MD5</option>
-            <option value="seed-cfb">SEED-CFB</option>
-            <option value="table">Table</option>
-          </select-->
+          <label>本地端口</label>
+          <input ng-model="setting.localport" placeholder="代理端口">
       </div>
       <div class="control-group">
-          <label for="cb" class="pure-checkbox"></label>
-          <button>启动</button>
-          <button>停止</button>
+          <label></label>
+          <button ng-click="save()" ng-show="editing">保存</button>
+          <button ng-click="cancel()" ng-show="editing">取消</button>
+          <button ng-click="start()" ng-show="!editing">启动</button>
+          <button ng-click="stop()" ng-show="!editing">停止</button>
       </div>
     </div>
-    <div id="list">
+    <div id="list" ng-show="expanded">
       <ul>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
-        <li>
-          <h4>Server1</h4>
-          <span>127.0.0.1</span>
-        </li>
+        <li ng-repeat="server in servers" ng-click="select($index)"
+          ng-class="selected==$index?'selected':''">
+          <h4>{{server.name}}</h4>
+          <span>{{server.ip}}:{{server.port}}</span>
+        </li> 
       </ul>
-      <button>添加</button>
-      <button>删除</button>
+      <button ng-click="add()">添加</button>
+      <button ng-click="delete()">删除</button>
     </div>
   </section>
   <!-- Footer -->
   <footer id="footer">
     <div>by Nighwu<div>
   </footer>
-  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
   <script type="text/javascript">
+  
+    var fs = require('fs');
+
+    fs.watch('./', function() {
+      if (location)
+        location.reload();
+    });
+    fs.watch('./js/', function() {
+      if (location)
+        location.reload();
+    });
+  
   </script>
   </body>
 </html>
