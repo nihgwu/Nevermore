@@ -3,10 +3,10 @@ angular.module('app.controllers', [])
 .controller('AppCtrl', function ($scope, NWService, ServerService, SettingService, DataService) {
   var win = NWService.win;
 
-  $scope.servers = DataService.servers;
-  $scope.setting = SettingService.setting;
-  $scope.selected = $scope.setting.server || 0;
-  $scope.current = DataService.get($scope.selected);
+  $scope.servers = DataService.getServers();
+  $scope.setting = DataService.getSetting();
+  $scope.selected = DataService.getSelected();
+  $scope.current = $scope.servers[$scope.selected];
   $scope.methods = DataService.methods;
 
   $scope.debug = function () {
@@ -17,36 +17,38 @@ angular.module('app.controllers', [])
   }
   var current;
   $scope.edit = function () {
-    current = angular.copy($scope.current);
     $scope.editing = true;
   }
   $scope.save = function () {
     var server = $scope.current;
     if(server.name && server.ip && server.port && server.password && server.method) {
-      //$scope.servers.push(server);
       $scope.editing = false;
+      DataService.setServers($scope.servers);
+      DataService.setSetting($scope.setting);
     }
   }
   $scope.cancel = function () {
     $scope.editing = false;
-    $scope.current = current;
-    if($scope.adding) {
-      $scope.adding = false;
-      $scope.methods.pop();
-      $scope.selected =0;
-    }
-    $scope.servers[$scope.selected] = current;
+    $scope.selected = DataService.getSelected();
+    $scope.current = DataService.getCurrent();
+    $scope.servers = DataService.getServers();
+    $scope.setting = DataService.getSetting();  
   }
+
+  $scope.running = false;
   $scope.start = function () {
     var config = {
-      localport: $setting.localport,
-      timeout: $setting.timeout
+      localport: $scope.setting.localport,
+      timeout: $scope.setting.timeout
     }
-    angular.extend(config,$current);
+    angular.extend(config,$scope.current);
     ServerService.start(config);
+    $scope.running = true;
+    DataService.setSelected($scope.selected);
   }
   $scope.stop = function () {
     ServerService.stop();
+    $scope.running = false;
   }
 
   $scope.method = function () {
@@ -63,12 +65,10 @@ angular.module('app.controllers', [])
   }
   $scope.select = function (idx) {
     $scope.selected = idx;
-    $scope.current = DataService.get(idx);
+    $scope.current = $scope.servers[idx];
   }
-  $scope.adding = false;
   $scope.add = function () {
-    $scope.adding = true;
-    $scope.edit();
+    $scope.editing = true;
     var server = {
       name: 'Server ' + $scope.servers.length,
       method: $scope.methods[0].value
@@ -84,5 +84,10 @@ angular.module('app.controllers', [])
     if(idx<0) idx = 0;
     $scope.selected = idx;
     $scope.current = $scope.servers[idx];
+    DataService.setServers($scope.servers);
+  }
+  $scope.feedback = function () {
+    var link = 'http://liteneo.com';
+    NWService.openLink(link);
   }
 })

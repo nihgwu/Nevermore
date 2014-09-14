@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #333;
-	color: #fff;
+	color: #ccc;
 	width: 500px;
 	overflow: hidden;
 	/*font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";*/
@@ -11,9 +11,10 @@ body {
 }
 button, input, ul {
 	-webkit-app-region: no-drag;
-}
+} 
 
 #header {
+	color: #fff;
 	height: 48px;
 	background-color: #222;
 	padding: 6px 6px 6px 66px;
@@ -54,25 +55,25 @@ button, input, ul {
 }
 
 #toolbar {
-	position: absolute;
+	position: fixed;
 	right: 6px;
 }
 
 button {
-	color: #888;
+	color: #ccc;
 	background-color: #000;
 	border: #000 1px solid;
 	margin: 0;
 	padding: 5px 10px;
 }
 button:hover {
-	color: #ccc;
+	color: #fff;
 }
 button:focus, button.focus {
 	transition:border linear .2s;
 	outline: none;
-	border-color:#ccc;
-	color: #ccc;
+	border-color:#fff;
+	color: #fff;
 }
 input, select{
 	padding: 4px;
@@ -84,6 +85,14 @@ select {
 	-webkit-appearance: none;
 	border-radius: 0;
 	width: 158px;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+a:hover {
+	color: #fff;
 }
 
 #container {
@@ -140,6 +149,9 @@ select {
 #list ul li:nth-child(even) {
 	background-color: #444;
 }
-#list ul li:hover, .selected {
+#list ul li:hover {
+	background-color: #888;
+}
+li.selected {
 	background-color: #888;
 }

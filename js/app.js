@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'reaki.services' is found in services.js
 // 'reaki.controllers' is found in controllers.js
-angular.module('app', ['app.services', 'app.controllers'])
+angular.module('app', ['app.directives', 'app.services', 'app.controllers'])
 
 .run(function($rootScope, NWService) {
 })

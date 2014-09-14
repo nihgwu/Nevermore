@@ -58,13 +58,19 @@ angular.module('app.services', [])
   tray.menu = menu;
   window.tray = tray;
   this.win = win;
+  this.openLink = function (link) {
+    gui.Shell.openExternal(link);
+  }
 })
 
 .service('ServerService', function () {
   var ss = require('shadowsocks');
   var client = null;
   this.start = function (config) {
-    if(client)  client.close();
+    if(client)  return client.close(function(){
+      client = ss.createServer(config.ip, config.port, config.localport, 
+        config.password, config.method, 1000* config.timeout, '127.0.0.1');
+    });
     client = ss.createServer(config.ip, config.port, config.localport, 
       config.password, config.method, 1000* config.timeout, '127.0.0.1');
   }
@@ -74,20 +80,39 @@ angular.module('app.services', [])
 })
 
 .service('DataService', function () {
-  var servers = [];
-  for(var i=0;i<3;i++){
-    var server = {
-      name: 'Server '+i,
-      ip: '127.0.0.1',
-      port: 3000+i,
-      password: 'password'+i,
-      method: 'aes-256-cfb'
-    }
-    servers.push(server);
+  this.getCurrent = function () {
+    return this.getServers(this.getSelected());
   }
-  this.servers = servers;
-  this.get = function (idx) {
-    return servers[idx];
+  this.getServers = function () {
+    if(localStorage.servers)
+      return angular.fromJson(localStorage.servers);
+    return [{
+      name: 'Public Server',
+      ip: '209.141.36.62',
+      port: 8348,
+      password: '$#HAL9000!',
+      method: 'aes-256-cfb'
+    }]
+  }
+  this.setServers = function (servers) {
+    localStorage.servers = angular.toJson(servers);
+  }
+  this.getSelected = function () {
+    return localStorage.selected || 0;
+  }
+  this.setSelected = function (selected) {
+    localStorage.selected = selected;
+  }
+  this.getSetting = function () {
+    if(localStorage.setting)
+      return angular.fromJson(localStorage.setting);
+    return localStorage.setting || {
+      localport: 1080,
+      timeout: 600
+    }
+  }
+  this.setSetting = function (setting) {
+    localStorage.setting = angular.toJson(setting);
   }
 
   this.methods = [{
