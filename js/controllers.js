@@ -39,13 +39,10 @@ angular.module('app.controllers', [])
   }
   $scope.start = function () {
     var config = {
-      ip: '106.187.92.177',
-      port: '443',
-      localport: 8016,
-      timeout: 60,
-      password: 'lovechina',
-      method: 'aes-256-cfb'
+      localport: $setting.localport,
+      timeout: $setting.timeout
     }
+    angular.extend(config,$current);
     ServerService.start(config);
   }
   $scope.stop = function () {
