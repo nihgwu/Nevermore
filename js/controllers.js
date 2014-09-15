@@ -1,20 +1,18 @@
 angular.module('app.controllers', [])
 
 .controller('AppCtrl', function ($scope, $timeout, NWService, ServerService, DataService) {
-  var win = NWService.win;
-
   $scope.servers = DataService.getServers();
   $scope.setting = DataService.getSetting();
   $scope.selected = DataService.getSelected();
   $scope.current = $scope.servers[$scope.selected];
   $scope.methods = DataService.methods;
   $scope.running = DataService.getRunning();
-
+  
   $scope.debug = function () {
-    win.showDevTools();
+    NWService.showDebug();
   }
   $scope.close = function () {
-    win.hide();
+    NWService.hideWin();
   }
   var current;
   $scope.edit = function () {
@@ -65,7 +63,7 @@ angular.module('app.controllers', [])
     var width = 500;
     if($scope.expanded)  width = 300;
     $scope.expanded = !($scope.expanded);
-    return win.resizeTo(width,400);
+    return NWService.resizeTo(width,400);
   }
   $scope.select = function (idx) {
     $scope.selected = idx;

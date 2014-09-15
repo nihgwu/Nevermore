@@ -44,11 +44,24 @@ angular.module('app.services', [])
     return;
   });
   win.on('minimize', function() {
-    return this.hide();
+    hideWin();
   });
-  win.on('close', function(quit) {
-    return this.hide();
+  win.on('close', function() {
+    hideWin();
   });
+
+  var hideWin = function() {
+    self.show = false;
+    hideItem.label = '显示';
+    return win.hide();
+  }
+  this.hideWin = hideWin;
+  this.showDebug = function () {
+    win.showDevTools();
+  }
+  this.resizeTo = function (width,height) {
+    win.resizeTo(width, height);
+  }
 
   var tray = new gui.Tray({
     icon: 'img/menu_icon.png'
@@ -89,7 +102,7 @@ angular.module('app.services', [])
   menu.append(quitItem);
   tray.menu = menu;
   window.tray = tray;
-  this.win = win;
+
   this.openLink = function (link) {
     gui.Shell.openExternal(link);
   }

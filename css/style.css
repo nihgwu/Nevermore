@@ -1,13 +1,12 @@
 body {
 	width: 500px;
+	height: 400px;
 	margin: 0;
 	padding: 0;
 	background-color: #333;
 	color: #ccc;
 	overflow: hidden;
-	/*font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";*/
   -webkit-user-select: none;
-	-webkit-app-region: drag;
 }
 button, input, ul, a, select {
 	-webkit-app-region: no-drag;
@@ -19,6 +18,7 @@ button, input, ul, a, select {
 	background-color: #222;
 	padding: 6px 6px 6px 66px;
 	border-bottom: #000 3px solid;
+	-webkit-app-region: drag;
 }
 
 #footer {
@@ -26,8 +26,6 @@ button, input, ul, a, select {
 	bottom: 0px;
 	width: 100%;
 	background-color: #222;
-  -webkit-user-select: none;
-	-webkit-app-region: drag;
 }
 #footer div {
 	margin: 6px;
@@ -80,6 +78,7 @@ input, select{
 	padding: 4px;
 	margin: 0;
 	border: 0;
+	line-height: 17px;
 	text-indent: 8px;
 	width: 150px;
 	outline: none;
@@ -88,7 +87,6 @@ select {
 	-webkit-appearance: none;
 	border-radius: 0;
 	width: 158px;
-	text-indent: 4px;
 }
 
 a {
@@ -158,6 +156,19 @@ li.even {
 #list ul li:hover, li.selected {
 	color: #fff;
 	background-color: #888;
+}
+.dropbox {
+	display: inline-block;
+	position: relative;
+}
+.dropbox:after{
+	content: '';
+	position: absolute;
+	top: 9px;
+	right: 3px;
+	border: 4px dashed;
+	border-color: #333 transparent;
+	pointer-events: none;
 }
 
 /*Scrollbar*/
