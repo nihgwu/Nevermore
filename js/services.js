@@ -1,23 +1,38 @@
 angular.module('app.services', [])
 
-.service('ServerService', function () {
+.service('ServerService', function ($timeout) {
   var ss = require('shadowsocks');
   var client = null;
-  this.start = function (config) {
-    if(client)  return client.close(function(){
-      client = ss.createServer(config.ip, config.port, config.localport, 
+
+  var restarting = false;
+  var restart = function(config) {
+    if(restarting) {
+      console.log('Already restarting');
+      retrun;
+    }
+    isRestarting = true;
+    var start = function() {
+      restarting = false;
+      client = ss.createServer(config.ip, parseInt(config.port), parseInt(config.localport), 
         config.password, config.method, 1000* config.timeout, '127.0.0.1');
-    });
-    client = ss.createServer(config.ip, config.port, config.localport, 
-      config.password, config.method, 1000* config.timeout, '127.0.0.1');
+    }
+    if(client != null) {
+      if(client.address()){
+        client.close();
+      }
+      return $timeout(start,1000);
+    }
+    else return start();
   }
+
+  this.start = restart;
   this.stop = function () {
     if(client) client.close();
   }
 })
 
-.service('NWService', function () {
-
+.service('NWService', function ($rootScope) {
+  var self = this;
   var gui = require('nw.gui');
   var os = require('os');
 
@@ -42,18 +57,23 @@ angular.module('app.services', [])
   tray.on('click', function() {
     return gui.Window.get().show();
   });
-  var showItem = new gui.MenuItem({
+  this.running = false;
+  var startItem = new gui.MenuItem({
     type: 'normal',
     label: 'Nevermore',
     icon: 'img/off_icon.png',
     click: function() {
-      return win.show();
+      $rootScope.$broadcast('running', !self.running);
     }
   });
+  this.show = true;
   var hideItem = new gui.MenuItem({
     type: 'normal',
     label: '隐藏',
     click: function() {
+      self.show = !self.show;
+      this.label = self.show?'隐藏':'显示';
+      if(self.show) return win.show();
       return win.hide();
     }
   });
@@ -64,7 +84,7 @@ angular.module('app.services', [])
       return win.close(true);
     }
   });
-  menu.append(showItem);
+  menu.append(startItem);
   menu.append(hideItem);
   menu.append(quitItem);
   tray.menu = menu;
@@ -73,17 +93,10 @@ angular.module('app.services', [])
   this.openLink = function (link) {
     gui.Shell.openExternal(link);
   }
-  this.createMenu = function(menuStructure) {
-    var menu = new gui.Menu(menuStructure.root);
-    if(menuStructure.root && menuStructure.root.items) {
-      console.log("Creating %d menu items for root menu", menuStructure.root.items.length);
-      createMenuItems(menu, menuStructure.root.items);
-    }
-    if(menu.type === 'menubar') {
-      this.window.menu = menu;
-    }
-    return menu;
-  };
+  this.setRunning = function (running) {
+    self.running = running;
+    startItem.icon = running?'img/on_icon.png':'img/off_icon.png';
+  }
 })
 
 .service('DataService', function () {
