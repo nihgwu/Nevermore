@@ -17,7 +17,7 @@
     "position": "mouse",
     "min_width": 300,
     "min_height": 400,
-    "max_width": 300,
+    "max_width": 500,
     "max_height": 400
   },
   "js-flags": "--expose-gc",

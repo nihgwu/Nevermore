@@ -1,6 +1,6 @@
 angular.module('app.controllers', [])
 
-.controller('AppCtrl', function ($scope, NWService, ServerService, SettingService, DataService) {
+.controller('AppCtrl', function ($scope, NWService, ServerService, DataService) {
   var win = NWService.win;
 
   $scope.servers = DataService.getServers();
@@ -8,12 +8,13 @@ angular.module('app.controllers', [])
   $scope.selected = DataService.getSelected();
   $scope.current = $scope.servers[$scope.selected];
   $scope.methods = DataService.methods;
-
+  $scope.running = DataService.getRunning();
+  
   $scope.debug = function () {
     win.showDevTools();
   }
   $scope.close = function () {
-    win.close(true);
+    win.hide();
   }
   var current;
   $scope.edit = function () {
@@ -35,7 +36,6 @@ angular.module('app.controllers', [])
     $scope.setting = DataService.getSetting();  
   }
 
-  $scope.running = false;
   $scope.start = function () {
     var config = {
       localport: $scope.setting.localport,
@@ -45,10 +45,12 @@ angular.module('app.controllers', [])
     ServerService.start(config);
     $scope.running = true;
     DataService.setSelected($scope.selected);
+    DataService.setRunning($scope.running);
   }
   $scope.stop = function () {
     ServerService.stop();
     $scope.running = false;
+    DataService.setRunning($scope.running);
   }
 
   $scope.method = function () {
@@ -90,4 +92,5 @@ angular.module('app.controllers', [])
     var link = 'http://liteneo.com';
     NWService.openLink(link);
   }
+  if($scope.running)  $scope.start();
 })

@@ -1,0 +1,319 @@
+[7148:0915/133655:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7480:0915/133655:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7148:0915/133742:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133745:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[6888:0915/133745:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[6636:0915/133746:WARNING:dispatcher_host.cc(189)] Unknown object: 1 type:Window method:ShowDevTools arguments:[ "", false ]
+
+[8644:0915/133746:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[6636:0915/133746:INFO:simple_index_file.cc(397)] Simple Cache Index is being restored from disk.
+[7148:0915/133800:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133800:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133902:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7148:0915/133902:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7148:0915/133909:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7148:0915/133909:INFO:CONSOLE(10071)] ""TypeError: Object #\u003CScope\u003E has no method 'start'\n    at new eval (file:///D:/nodejs/Nevermore/js/controllers.js:12:30)\n    at invoke (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3966:17)\n    at Object.instantiate (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3977:23)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:7281:28)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6670:34)\n    at forEach (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:332:20)\n    at nodeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6657:11)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6105:13)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6108:13)\n    at publicLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6001:30)"", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[6636:0915/133909:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133909:INFO:CONSOLE(10071)] ""TypeError: Object #\u003CScope\u003E has no method 'start'\n    at new eval (file:///D:/nodejs/Nevermore/js/controllers.js:12:30)\n    at invoke (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3966:17)\n    at Object.instantiate (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3977:23)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:7281:28)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6670:34)\n    at forEach (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:332:20)\n    at nodeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6657:11)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6105:13)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6108:13)\n    at publicLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6001:30)"", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[7524:0915/133911:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[5116:0915/133911:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7524:0915/133912:INFO:CONSOLE(10071)] ""TypeError: Object #\u003CScope\u003E has no method 'start'\n    at new eval (file:///D:/nodejs/Nevermore/js/controllers.js:12:30)\n    at invoke (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3966:17)\n    at Object.instantiate (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3977:23)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:7281:28)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6670:34)\n    at forEach (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:332:20)\n    at nodeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6657:11)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6105:13)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6108:13)\n    at publicLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6001:30)"", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[7524:0915/133916:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/133916:INFO:CONSOLE(10071)] ""TypeError: Object #\u003CScope\u003E has no method 'start'\n    at new eval (file:///D:/nodejs/Nevermore/js/controllers.js:12:30)\n    at invoke (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3966:17)\n    at Object.instantiate (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3977:23)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:7281:28)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6670:34)\n    at forEach (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:332:20)\n    at nodeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6657:11)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6105:13)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6108:13)\n    at publicLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6001:30)"", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[6636:0915/133916:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133916:INFO:CONSOLE(10071)] ""TypeError: Object #\u003CScope\u003E has no method 'start'\n    at new eval (file:///D:/nodejs/Nevermore/js/controllers.js:12:30)\n    at invoke (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3966:17)\n    at Object.instantiate (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:3977:23)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:7281:28)\n    at eval (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6670:34)\n    at forEach (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:332:20)\n    at nodeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6657:11)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6105:13)\n    at compositeLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6108:13)\n    at publicLinkFn (file:///D:/nodejs/Nevermore/bower_components/angular/angular.js:6001:30)"", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[7524:0915/133937:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133937:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/133938:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/133938:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/133947:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[6736:0915/133947:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8268:0915/134001:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7744:0915/134001:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8268:0915/134007:INFO:CONSOLE(10071)] "{}", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[8520:0915/134013:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7508:0915/134013:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9088:0915/134033:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134033:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134033:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134033:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134033:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5376:0915/134036:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8428:0915/134036:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8512:0915/134046:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9304:0915/134046:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8512:0915/134053:WARNING:dispatcher_host.cc(189)] Unknown object: 1 type:Window method:ShowDevTools arguments:[ "", false ]
+
+[9384:0915/134053:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[8512:0915/134054:INFO:simple_index_file.cc(397)] Simple Cache Index is being restored from disk.
+[8512:0915/134058:INFO:CONSOLE(10071)] "{}", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[8512:0915/134059:INFO:CONSOLE(10071)] "{}", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[8512:0915/134059:INFO:CONSOLE(10071)] "{}", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[8512:0915/134100:INFO:CONSOLE(10071)] "{}", source: file:///D:/nodejs/Nevermore/bower_components/angular/angular.js (10071)
+[9564:0915/134113:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9668:0915/134113:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9564:0915/134140:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8268:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8520:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[7524:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[6636:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5376:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9564:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9088:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[7524:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8268:0915/134141:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134141:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8268:0915/134142:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8520:0915/134142:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134142:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9880:0915/134145:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9988:0915/134145:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9880:0915/134145:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9880:0915/134147:WARNING:dispatcher_host.cc(189)] Unknown object: 1 type:Window method:ShowDevTools arguments:[ "", false ]
+
+[10064:0915/134147:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9880:0915/134147:INFO:simple_index_file.cc(397)] Simple Cache Index is being restored from disk.
+[9564:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8520:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9880:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9088:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5376:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8268:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[7524:0915/134319:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134319:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[6636:0915/134320:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134320:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134320:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134320:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134320:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8520:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9880:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9088:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9564:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9088:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134328:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134328:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[6636:0915/134329:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134329:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134329:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134329:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134329:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134334:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134334:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134334:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8520:0915/134334:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[5376:0915/134334:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5376:0915/134334:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8268:0915/134334:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134334:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134334:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8512:0915/134335:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[7524:0915/134335:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134335:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9880:0915/134335:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134335:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[6636:0915/134335:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134335:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9564:0915/134335:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134335:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[8520:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8520:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[5376:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[5376:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134335:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134336:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134336:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134336:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134336:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134337:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[7024:0915/134337:INFO:breakpad_win.cc(1067)] Initialized crash dump in C:\Users\sdmx\AppData\Local\Temp\
+[9232:0915/134337:INFO:CONSOLE(12)] "", source: file:///D:/nodejs/Nevermore/js/controllers.js (12)
+[9232:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5376:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134354:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134355:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134355:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9880:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[5376:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[5376:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134355:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134356:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134356:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8268:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8520:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134358:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7508:0915/134359:ERROR:ipc_channel_win.cc(404)] pipe error: 232
+[6636:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9880:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134359:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8268:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134359:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9088:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134400:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134400:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9088:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134401:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[8512:0915/134402:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[8512:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134404:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9564:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134405:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9564:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134405:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[6636:0915/134406:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[6636:0915/134406:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134406:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134406:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9232:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9880:0915/134406:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134407:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134407:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134407:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134407:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9880:0915/134407:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[9880:0915/134407:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134407:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[9232:0915/134407:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134408:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[7524:0915/134408:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134408:ERROR:connection.cc(1007)] sqlite error 5, errno 33: database is locked
+[7524:0915/134408:WARNING:status_icon_win.cc(33)] Unable to create status tray icon.
+[5116:0915/134409:ERROR:ipc_channel_win.cc(404)] pipe error: 232
