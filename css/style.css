@@ -7,6 +7,7 @@ body {
 	color: #ccc;
 	overflow: hidden;
   -webkit-user-select: none;
+	font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";
 }
 button, input, ul, a, select {
 	-webkit-app-region: no-drag;

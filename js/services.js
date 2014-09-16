@@ -68,7 +68,10 @@ angular.module('app.services', [])
   });
   var menu = new gui.Menu();
   tray.on('click', function() {
-    return gui.Window.get().show();
+    if(!self.show)  win.show();
+    self.show = true;
+    hideItem.label = '隐藏';
+    return win.focus();
   });
   this.running = false;
   var startItem = new gui.MenuItem({

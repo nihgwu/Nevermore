@@ -3,10 +3,13 @@
   "main": "index.html",
   "description": "shadowsocks client powered by Nodejs",
   "version": "0.0.1",
-  "keywords": [ "shadowsocks", "node-webkit" ],
-  "single-instance": false,
+  "keywords": [
+    "shadowsocks",
+    "node-webkit"
+  ],
+  "single-instance": true,
   "dependencies": {
-      "shadowsocks": "*"
+    "shadowsocks": "*"
   },
   "window": {
     "icon": "img/icon.png",
@@ -22,9 +25,12 @@
   },
   "js-flags": "--expose-gc",
   "licenses": [
-  {
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "node-webkit-builder": "^0.1.3"
   }
-  ]
 }

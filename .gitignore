@@ -1,4 +1,9 @@
 node_modules/
+build.js
+build/
+cache/
+dist/
+app/
 debug.log
 icudt.dll
 nw.exe
