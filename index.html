@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="author" content="nihgwu">
     <title>Nevermore</title>
-    <link rel="stylesheet" type="text/css" href="./bower_components/octicons/octicons/octicons.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body ng-controller="AppCtrl">
@@ -27,7 +26,7 @@
       <div class="control-group detail-row">
           <label>服务器名称</label>
           <input ng-dblclick="edit()" ng-model="current.name" ng-readonly="!editing" placeholder="服务器名称">
-          <button ng-click="expand()" ng-class="expanded?'focus':''" class="btn-expand octicon octicon-chevron-right"></button>
+          <button ng-click="expand()" ng-class="expanded?'focus':''" class="btn-expand">&gt;</button>
       </div>
       <div class="control-group detail-row">
           <label>服务器IP</label>
@@ -65,7 +64,7 @@
     </div>
     <div id="list">
       <ul>
-        <li ng-repeat="server in servers" ng-click="select($index)" ng-class="selected==$index?'selected':''" ng-class-even="'even'">
+        <li ng-repeat="server in servers" ng-click="select($index)" ng-class="listyle($index)" ng-class-even="'even'">
           <h4>{{server.name}}</h4>
           <span>{{server.ip}}:{{server.port}}</span>
         </li> 

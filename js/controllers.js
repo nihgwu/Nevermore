@@ -7,6 +7,15 @@ angular.module('app.controllers', [])
   $scope.current = $scope.servers[$scope.selected];
   $scope.methods = DataService.methods;
   $scope.running = DataService.getRunning();
+  $scope.cursor = DataService.getSelected();
+
+  $scope.listyle = function (idx) {
+    var style = '';
+    if($scope.running && $scope.selected == idx) style += 'running ';
+    if($scope.cursor == idx) style += 'selected';
+    //console.log(style);
+    return style;
+  }
   
   $scope.debug = function () {
     NWService.showDebug();
@@ -54,7 +63,7 @@ angular.module('app.controllers', [])
   }
 
   $scope.method = function () {
-    console.log($scope.current.method);
+    //console.log($scope.current.method);
   }
 
   $scope.editing = false;
@@ -66,7 +75,7 @@ angular.module('app.controllers', [])
     return NWService.resizeTo(width,400);
   }
   $scope.select = function (idx) {
-    $scope.selected = idx;
+    $scope.cursor = idx;
     $scope.current = $scope.servers[idx];
   }
   $scope.add = function () {
@@ -76,15 +85,15 @@ angular.module('app.controllers', [])
       method: $scope.methods[0].value
     }
     $scope.servers.push(server);
-    $scope.selected = $scope.servers.length-1;
-    $scope.current = $scope.servers[$scope.selected];
+    $scope.cursor = $scope.servers.length-1;
+    $scope.current = $scope.servers[$scope.cursor];
   }
   $scope.delete = function () {
     $scope.editing = false;
-    $scope.servers.splice($scope.selected,1);
-    var idx = $scope.selected -1;
+    $scope.servers.splice($scope.cursor,1);
+    var idx = $scope.cursor -1;
     if(idx<0) idx = 0;
-    $scope.selected = idx;
+    $scope.cursor = idx;
     $scope.current = $scope.servers[idx];
     DataService.setServers($scope.servers);
   }

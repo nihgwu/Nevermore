@@ -28,6 +28,7 @@ angular.module('app.services', [])
   this.start = restart;
   this.stop = function () {
     if(client) client.close();
+    client = null;
   }
 })
 
