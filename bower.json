@@ -1,0 +1,17 @@
+{
+  "name": "Nevermore",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nihgwu/Nevermore",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.24",
+    "octicons": "~2.1.2"
+  }
+}
