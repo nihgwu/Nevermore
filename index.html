@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="nihgwu">
     <title>Nevermore</title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/octicons/octicons/octicons.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body ng-controller="AppCtrl">
@@ -26,8 +27,7 @@
       <div class="control-group">
           <label>服务器名称</label>
           <input ng-dblclick="edit()" ng-model="current.name" ng-readonly="!editing" placeholder="服务器名称">
-          <button ng-click="expand()" ng-class="expanded?'focus':''" style="margin-left:-24px;padding:5px">&gt;</button>
-          </input>
+          <button ng-click="expand()" ng-class="expanded?'focus':''" class="btn-expand octicon octicon-chevron-right"></button>
       </div>
       <div class="control-group">
           <label>服务器IP</label>
