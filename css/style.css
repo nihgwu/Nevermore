@@ -9,7 +9,9 @@ body {
   -webkit-user-select: none;
 	font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";
 }
+
 button, input, ul, a, select {
+	font-family: inherit;
 	-webkit-app-region: no-drag;
 } 
 
@@ -42,6 +44,7 @@ button, input, ul, a, select {
 }
 
 #title {
+    cursor: default;
 	margin: 0px;
 }
 #title h4 {
@@ -103,6 +106,7 @@ a:hover {
 	font-size: 14px;
 	background-color: #333;
 	color: #ccc;
+	display: flex;
 }
 
 .control-group {
@@ -119,6 +123,26 @@ a:hover {
 	display: inline-block;
 	width: 300px;
 }
+
+#detail .detail-row {
+	display: flex;
+}
+
+#detail .detail-row label {
+	line-height: 25px;
+}
+
+#detail .detail-row button + button{
+    margin-right: 4px;
+}
+
+.btn-expand {
+	line-height: 23px;
+	box-sizing: border-box;
+	margin-left: -19px;
+	padding: 0 5px;
+}
+
 #list {
 	display: inline-block;
 	margin-left: 20px;
@@ -127,13 +151,14 @@ a:hover {
 	width: 150px;
 	border: #ccc 1px solid;
 	margin: 0;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	padding: 0;
 	background-color: #333;
 	list-style-type: none;
-	height: 230px;
+	height: 235px;
 	overflow-x: hidden;
 	overflow-y: auto;
+	box-sizing: border-box;
 }
 #list ul li {
 	padding: 6px;
@@ -141,7 +166,7 @@ a:hover {
 }
 #list ul li h4 {
 	font-size: 14px;
-	margin: 2px;
+	margin: 2px 0;
 }
 #list ul li span {
 	font-size: 13px;
