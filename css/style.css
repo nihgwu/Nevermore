@@ -43,6 +43,7 @@ button, input, ul, a, select {
 }
 
 #title {
+    cursor: default;
 	margin: 0px;
 }
 #title h4 {
