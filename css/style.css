@@ -10,6 +10,7 @@ body {
 	font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";
 }
 button, input, ul, a, select {
+	font-family: inherit;
 	-webkit-app-region: no-drag;
 } 
 
