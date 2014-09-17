@@ -10,5 +10,5 @@
 * 本地配置文件替换
 * 重新设计图标（希望有会设计的伙伴加入）
 
-![主界面](https://raw.githubusercontent.com/nihgwu/Nevermore/master/screenshots/1.png)   
-![服务器列表](https://raw.githubusercontent.com/nihgwu/Nevermore/master/screenshots/2.png)
+![主界面](./screenshots/3.png)   
+![服务器列表](./screenshots/4.png)
