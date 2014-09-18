@@ -117,30 +117,23 @@ a:hover {
 }
 
 .control-group {
+	display: flex;
 	padding-bottom: 10px;
 }
 .control-group label {
 	display: inline-block;
 	width: 100px;
 	margin-right: 10px;
+	line-height: 25px;
 	text-align: right;
+}
+.control-group button {
+	margin-right: 4px;
 }
 
 #detail {
 	display: inline-block;
 	width: 300px;
-}
-
-#detail .detail-row {
-	display: flex;
-}
-
-#detail .detail-row label {
-	line-height: 25px;
-}
-
-#detail .detail-row button + button{
-    margin-right: 4px;
 }
 
 #list {

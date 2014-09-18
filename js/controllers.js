@@ -51,6 +51,7 @@ angular.module('app.controllers', [])
     angular.extend(config,$scope.current);
     ServerService.start(config);
     $scope.running = true;
+    $scope.selected = $scope.cursor;
     NWService.setRunning($scope.running);
     DataService.setSelected($scope.selected);
     DataService.setRunning($scope.running);

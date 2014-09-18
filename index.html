@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html ng-app='app'>
   <head>
@@ -23,38 +22,38 @@
   <!-- Content -->
   <section id="container">
     <div id="detail">
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>服务器名称</label>
           <input ng-dblclick="edit()" ng-model="current.name" ng-readonly="!editing" placeholder="服务器名称">
           <button ng-click="expand()" ng-class="expanded?'focus':''" class="btn-expand">&gt;</button>
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>服务器IP</label>
           <input ng-model="current.ip" ng-disabled="!editing" placeholder="服务器IP">
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>服务器端口</label>
           <input ng-model="current.port" ng-disabled="!editing" number-mask="000000" placeholder="服务器端口">
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>密码</label>
           <input ng-model="current.password" ng-disabled="!editing" type="password" placeholder="密码">
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>加密方式</label>
           <div class="dropbox"><select ng-change="method()" ng-model="current.method" ng-disabled="!editing" placeholder="密码"
             ng-options="method.value as method.text for method in methods">
           </select></div>
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>连接超时</label>
           <input ng-dblclick="edit()" ng-model="setting.timeout" ng-readonly="!editing" number-mask="000000" placeholder="连接超时">
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label>本地端口</label>
           <input ng-dblclick="edit()" ng-model="setting.localport" ng-readonly="!editing" number-mask="000000" placeholder="代理端口">
       </div>
-      <div class="control-group detail-row">
+      <div class="control-group">
           <label></label>
           <button ng-click="save()" ng-show="editing">保存</button>
           <button ng-click="cancel()" ng-show="editing">取消</button>
