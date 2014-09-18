@@ -5,7 +5,9 @@
 #### 2014-09-16 v0.1beta 发布
 [下载Windows客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1beta/Nevermore-v0.1beta-win.zip) [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1beta/Nevermore-v0.1beta-osx.zip)
 
-**启动按钮高亮表示代理服务正在运行，点关闭按钮是最小化到托盘，右击退出真正退出**
+* 启动按钮高亮表示代理服务正在运行
+* 点关闭按钮是最小化到托盘，右击退出真正退出
+* 双击服务器名称或连接超时或本地端口修改参数
 
 #### TODO
 * 设置界面，加入多语言、皮肤等
