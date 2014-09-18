@@ -6,10 +6,12 @@ body {
 	background-color: #333;
 	color: #ccc;
 	overflow: hidden;
-  -webkit-user-select: none;
 	font-family: "tahoma", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft YaHei", "sans-serif";
+  -webkit-user-select: none;
 }
+
 button, input, ul, a, select {
+	font-family: inherit;
 	-webkit-app-region: no-drag;
 } 
 
@@ -23,7 +25,7 @@ button, input, ul, a, select {
 }
 
 #footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	width: 100%;
 	background-color: #222;
@@ -35,13 +37,14 @@ button, input, ul, a, select {
 }
 
 #logo {
-	position: absolute;
+	position: fixed;
 	left: 6px;
 	width: 48px;
 	height: 48px;
 }
 
 #title {
+  cursor: default;
 	margin: 0px;
 }
 #title h4 {
@@ -98,11 +101,19 @@ a:hover {
 	color: #fff;
 }
 
+.btn-expand {
+	line-height: 23px;
+	margin-left: -20px;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
 #container {
 	margin: 20px 0;
 	font-size: 14px;
 	background-color: #333;
 	color: #ccc;
+	display: flex;
 }
 
 .control-group {
@@ -119,6 +130,19 @@ a:hover {
 	display: inline-block;
 	width: 300px;
 }
+
+#detail .detail-row {
+	display: flex;
+}
+
+#detail .detail-row label {
+	line-height: 25px;
+}
+
+#detail .detail-row button + button{
+    margin-right: 4px;
+}
+
 #list {
 	display: inline-block;
 	margin-left: 20px;
@@ -127,36 +151,38 @@ a:hover {
 	width: 150px;
 	border: #ccc 1px solid;
 	margin: 0;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	padding: 0;
 	background-color: #333;
 	list-style-type: none;
-	height: 230px;
+	height: 235px;
 	overflow-x: hidden;
 	overflow-y: auto;
+	box-sizing: border-box;
 }
 #list ul li {
-	padding: 6px;
+	padding: 9px;
 	cursor: pointer;
 }
 #list ul li h4 {
 	font-size: 14px;
-	margin: 2px;
+	margin: 2px 0;
 }
 #list ul li span {
 	font-size: 13px;
 	color: #666;
 }
 /*#list ul li:nth-child(even) {*/
-li.even {
+#list ul li.even {
 	background-color: #444;
 }
-#list ul li:hover {
-	color: #fff;
-}
-#list ul li:hover, li.selected {
-	color: #fff;
+#list ul li.running {
+	color: #ccc;
 	background-color: #888;
+}
+#list ul li:hover, #list ul li.selected {
+	padding-left: 6px;
+	border-left: 3px solid #ccc;
 }
 .dropbox {
 	display: inline-block;
