@@ -14,5 +14,5 @@
 * 本地配置文件替换
 * 重新设计图标（希望有会设计的伙伴加入）
 
-![主界面](./screenshots/3.png)   
-![服务器列表](./screenshots/4.png)
+![主界面](./screenshots/1.png)   
+![服务器列表](./screenshots/2.png)
