@@ -1,6 +1,6 @@
 angular.module('app.controllers', [])
 
-.controller('AppCtrl', function ($scope, $timeout, NWService, ServerService, DataService) {
+.controller('AppCtrl', function ($scope, $timeout, $translate, NWService, ServerService, DataService) {
   $scope.servers = DataService.getServers();
   $scope.setting = DataService.getSetting();
   $scope.selected = DataService.getSelected();
@@ -8,6 +8,10 @@ angular.module('app.controllers', [])
   $scope.methods = DataService.methods;
   $scope.running = DataService.getRunning();
   $scope.cursor = DataService.getSelected();
+
+  $scope.language = function (key) {
+    $translate.use(key);
+  }
 
   $scope.listyle = function (idx) {
     var style = '';
@@ -89,7 +93,7 @@ angular.module('app.controllers', [])
     $scope.cursor = $scope.servers.length-1;
     $scope.current = $scope.servers[$scope.cursor];
   }
-  $scope.delete = function () {
+  $scope.remove = function () {
     $scope.editing = false;
     $scope.servers.splice($scope.cursor,1);
     var idx = $scope.cursor -1;

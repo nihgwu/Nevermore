@@ -3,62 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="nihgwu">
-    <title>Nevermore</title>
+    <title>{{ 'NAME' | translate }}</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body ng-controller="AppCtrl">
   <!-- Header -->
   <header id="header">
     <div id="toolbar">
+      <button ng-click="language('en')">en</button>
+      <button ng-click="language('zh')">zh</button>
       <button ng-click="debug()">&para;</button>
       <button ng-click="close()">&times;</button>
     </div>
     <img id="logo" src="img/icon.png"/>
     <div id="title">
-      <h4>Nevermore</h4>
-      <span>Shadowsocks client</span>
+      <h4>{{ 'NAME' | translate }}</h4>
+      <span>{{ 'DESCRIPTION' | translate }}</span>
     </div>
   </header>
   <!-- Content -->
   <section id="container">
     <div id="detail">
       <div class="control-group">
-          <label>服务器名称</label>
+          <label>{{ 'SERVER_NAME' | translate }}</label>
           <input ng-dblclick="edit()" ng-model="current.name" ng-readonly="!editing" placeholder="服务器名称">
           <button ng-click="expand()" ng-class="expanded?'focus':''" class="btn-expand">&gt;</button>
       </div>
       <div class="control-group">
-          <label>服务器IP</label>
+          <label>{{ 'SERVER_IP' | translate }}</label>
           <input ng-model="current.ip" ng-disabled="!editing" placeholder="服务器IP">
       </div>
       <div class="control-group">
-          <label>服务器端口</label>
+          <label>{{ 'SERVER_PORT' | translate }}</label>
           <input ng-model="current.port" ng-disabled="!editing" number-mask="000000" placeholder="服务器端口">
       </div>
       <div class="control-group">
-          <label>密码</label>
+          <label>{{ 'SERVER_PASSWORD' | translate }}</label>
           <input ng-model="current.password" ng-disabled="!editing" type="password" placeholder="密码">
       </div>
       <div class="control-group">
-          <label>加密方式</label>
-          <div class="dropbox"><select ng-change="method()" ng-model="current.method" ng-disabled="!editing" placeholder="密码"
+          <label>{{ 'SERVER_METHOD' | translate }}</label>
+          <div class="dropbox"><select ng-change="method()" ng-model="current.method" ng-disabled="!editing" placeholder="加密方式"
             ng-options="method.value as method.text for method in methods">
           </select></div>
       </div>
       <div class="control-group">
-          <label>连接超时</label>
+          <label>{{ 'TIMEOUT' | translate }}</label>
           <input ng-dblclick="edit()" ng-model="setting.timeout" ng-readonly="!editing" number-mask="000000" placeholder="连接超时">
       </div>
       <div class="control-group">
-          <label>本地端口</label>
+          <label>{{ 'LOCAL_PORT' | translate }}</label>
           <input ng-dblclick="edit()" ng-model="setting.localport" ng-readonly="!editing" number-mask="000000" placeholder="代理端口">
       </div>
       <div class="control-group">
           <label></label>
-          <button ng-click="save()" ng-show="editing">保存</button>
-          <button ng-click="cancel()" ng-show="editing">取消</button>
-          <button ng-click="start()" ng-show="!editing" ng-class="running?'focus':''">启动</button>
-          <button ng-click="stop()" ng-show="!editing">停止</button>
+          <button ng-click="save()" ng-show="editing">{{ 'BUTTON_SAVE' | translate }}</button>
+          <button ng-click="cancel()" ng-show="editing">{{ 'BUTTON_CANCEL' | translate }}</button>
+          <button ng-click="start()" ng-show="!editing" ng-class="running?'focus':''">{{ 'BUTTON_START' | translate }}</button>
+          <button ng-click="stop()" ng-show="!editing">{{ 'BUTTON_STOP' | translate }}</button>
       </div>
     </div>
     <div id="list">
@@ -68,17 +70,18 @@
           <span>{{server.ip}}:{{server.port}}</span>
         </li> 
       </ul>
-      <button ng-click="add()">添加</button>
-      <button ng-click="delete()">删除</button>
+      <button ng-click="add()">{{ 'BUTTON_ADD' | translate }}</button>
+      <button ng-click="remove()">{{ 'BUTTON_REMOVE' | translate }}</button>
     </div>
   </section>
   <!-- Footer -->
   <footer id="footer">
     <div>
-      <a href ng-click="feedback()">问题反馈</a>
+      <a href ng-click="feedback()">{{ 'FEEDBACK' | translate }}</a>
     <div>
   </footer>
   <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/directives.js"></script>
   <script type="text/javascript" src="js/services.js"></script>

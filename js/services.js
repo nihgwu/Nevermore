@@ -65,7 +65,7 @@ angular.module('app.services', [])
   }
 
   var tray = new gui.Tray({
-    icon: 'img/menu_icon.png'
+    icon: 'img/off_tray_icon.png'
   });
   var menu = new gui.Menu();
   tray.on('click', function() {
@@ -112,6 +112,7 @@ angular.module('app.services', [])
   }
   this.setRunning = function (running) {
     self.running = running;
+    tray.icon = running?'img/on_tray_icon.png':'img/off_tray_icon.png';
     startItem.icon = running?'img/on_icon.png':'img/off_icon.png';
   }
 })
