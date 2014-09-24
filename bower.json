@@ -11,6 +11,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.24"
+    "angular": "~1.2.24",
+    "flat-ui": "~2.2.0",
+    "angular-translate": "~2.4.0"
   }
 }
