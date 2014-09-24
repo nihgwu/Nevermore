@@ -24,12 +24,10 @@
     "max_height": 400
   },
   "js-flags": "--expose-gc",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }],
   "devDependencies": {
     "node-webkit-builder": "^0.1.3"
   }

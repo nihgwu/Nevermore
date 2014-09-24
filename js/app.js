@@ -11,45 +11,44 @@ angular.module('app', ['pascalprecht.translate', 'app.directives', 'app.services
 })
 */
 .config(function($translateProvider) {
-	
+
   $translateProvider.translations('en', {
-  	NAME: 'Nevermore',
-  	DESCRIPTION: 'shadowsocks client',
-  	SERVER_NAME: 'Server Name',
-  	SERVER_IP: 'Server IP',
-  	SERVER_PORT: 'Server Port',
-  	SERVER_PASSWORD: 'Password',
-  	SERVER_METHOD: 'Encryption',
-  	TIMEOUT: 'Timeout',
-  	LOCAL_PORT: 'Local Port',
-  	BUTTON_START: 'Start',
-  	BUTTON_STOP: 'Stop',
-  	BUTTON_SAVE: 'Save',
-  	BUTTON_CANCEL: 'Cancel',
-  	BUTTON_ADD: 'Add',
-  	BUTTON_REMOVE: 'Remove',
-  	FEEDBACK: 'Feedback'
+    NAME: 'Nevermore',
+    DESCRIPTION: 'shadowsocks client',
+    SERVER_NAME: 'Server Name',
+    SERVER_IP: 'Server IP',
+    SERVER_PORT: 'Server Port',
+    SERVER_PASSWORD: 'Password',
+    SERVER_METHOD: 'Encryption',
+    TIMEOUT: 'Timeout',
+    LOCAL_PORT: 'Local Port',
+    BUTTON_START: 'Start',
+    BUTTON_STOP: 'Stop',
+    BUTTON_SAVE: 'Save',
+    BUTTON_CANCEL: 'Cancel',
+    BUTTON_ADD: 'Add',
+    BUTTON_REMOVE: 'Remove',
+    FEEDBACK: 'Feedback'
   });
 
   $translateProvider.translations('zh', {
-  	NAME: 'Nevermore',
-  	DESCRIPTION: 'shadowsocks client',
-  	SERVER_NAME: '服务器名称',
-  	SERVER_IP: '服务器IP',
-  	SERVER_PORT: '服务器端口',
-  	SERVER_PASSWORD: '密码',
-  	SERVER_METHOD: '加密方式',
-  	TIMEOUT: '连接超时',
-  	LOCAL_PORT: '本地端口',
-  	BUTTON_START: '启动',
-  	BUTTON_STOP: '停止',
-  	BUTTON_SAVE: '保存',
-  	BUTTON_CANCEL: '取消',
-  	BUTTON_ADD: '添加',
-  	BUTTON_REMOVE: '删除',
-  	FEEDBACK: '问题反馈'
+    NAME: 'Nevermore',
+    DESCRIPTION: 'shadowsocks client',
+    SERVER_NAME: '服务器名称',
+    SERVER_IP: '服务器IP',
+    SERVER_PORT: '服务器端口',
+    SERVER_PASSWORD: '密码',
+    SERVER_METHOD: '加密方式',
+    TIMEOUT: '连接超时',
+    LOCAL_PORT: '本地端口',
+    BUTTON_START: '启动',
+    BUTTON_STOP: '停止',
+    BUTTON_SAVE: '保存',
+    BUTTON_CANCEL: '取消',
+    BUTTON_ADD: '添加',
+    BUTTON_REMOVE: '删除',
+    FEEDBACK: '问题反馈'
   });
 
   $translateProvider.preferredLanguage('en');
 });
-

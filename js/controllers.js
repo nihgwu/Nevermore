@@ -1,6 +1,6 @@
 angular.module('app.controllers', [])
 
-.controller('AppCtrl', function ($scope, $timeout, $translate, NWService, ServerService, DataService) {
+.controller('AppCtrl', function($scope, $timeout, $translate, NWService, ServerService, DataService) {
   $scope.servers = DataService.getServers();
   $scope.setting = DataService.getSetting();
   $scope.selected = DataService.getSelected();
@@ -9,50 +9,50 @@ angular.module('app.controllers', [])
   $scope.running = DataService.getRunning();
   $scope.cursor = DataService.getSelected();
 
-  $scope.language = function (key) {
+  $scope.language = function(key) {
     $translate.use(key);
   }
 
-  $scope.listyle = function (idx) {
+  $scope.listyle = function(idx) {
     var style = '';
-    if($scope.running && $scope.selected == idx) style += 'running ';
-    if($scope.cursor == idx) style += 'selected';
+    if ($scope.running && $scope.selected == idx) style += 'running ';
+    if ($scope.cursor == idx) style += 'selected';
     //console.log(style);
     return style;
   }
-  
-  $scope.debug = function () {
+
+  $scope.debug = function() {
     NWService.showDebug();
   }
-  $scope.close = function () {
+  $scope.close = function() {
     NWService.hideWin();
   }
   var current;
-  $scope.edit = function () {
+  $scope.edit = function() {
     $scope.editing = true;
   }
-  $scope.save = function () {
+  $scope.save = function() {
     var server = $scope.current;
-    if(server.name && server.ip && server.port && server.password && server.method) {
+    if (server.name && server.ip && server.port && server.password && server.method) {
       $scope.editing = false;
       DataService.setServers($scope.servers);
       DataService.setSetting($scope.setting);
     }
   }
-  $scope.cancel = function () {
+  $scope.cancel = function() {
     $scope.editing = false;
     $scope.selected = DataService.getSelected();
     $scope.current = DataService.getCurrent();
     $scope.servers = DataService.getServers();
-    $scope.setting = DataService.getSetting();  
+    $scope.setting = DataService.getSetting();
   }
 
-  $scope.start = function () {
+  $scope.start = function() {
     var config = {
       localport: $scope.setting.localport,
       timeout: $scope.setting.timeout
     }
-    angular.extend(config,$scope.current);
+    angular.extend(config, $scope.current);
     ServerService.start(config);
     $scope.running = true;
     $scope.selected = $scope.cursor;
@@ -60,63 +60,63 @@ angular.module('app.controllers', [])
     DataService.setSelected($scope.selected);
     DataService.setRunning($scope.running);
   }
-  $scope.stop = function () {
+  $scope.stop = function() {
     ServerService.stop();
     $scope.running = false;
     NWService.setRunning($scope.running);
     DataService.setRunning($scope.running);
   }
 
-  $scope.method = function () {
+  $scope.method = function() {
     //console.log($scope.current.method);
   }
 
   $scope.editing = false;
   $scope.expanded = false;
-  $scope.expand = function () {
+  $scope.expand = function() {
     var width = 500;
-    if($scope.expanded)  width = 300;
+    if ($scope.expanded) width = 300;
     $scope.expanded = !($scope.expanded);
-    return NWService.resizeTo(width,400);
+    return NWService.resizeTo(width, 400);
   }
-  $scope.select = function (idx) {
+  $scope.select = function(idx) {
     $scope.cursor = idx;
     $scope.current = $scope.servers[idx];
   }
-  $scope.add = function () {
+  $scope.add = function() {
     $scope.editing = true;
     var server = {
       name: 'Server ' + $scope.servers.length,
       method: $scope.methods[0].value
     }
     $scope.servers.push(server);
-    $scope.cursor = $scope.servers.length-1;
+    $scope.cursor = $scope.servers.length - 1;
     $scope.current = $scope.servers[$scope.cursor];
   }
-  $scope.remove = function () {
+  $scope.remove = function() {
     $scope.editing = false;
-    $scope.servers.splice($scope.cursor,1);
-    var idx = $scope.cursor -1;
-    if(idx<0) idx = 0;
+    $scope.servers.splice($scope.cursor, 1);
+    var idx = $scope.cursor - 1;
+    if (idx < 0) idx = 0;
     $scope.cursor = idx;
     $scope.current = $scope.servers[idx];
     DataService.setServers($scope.servers);
   }
-  $scope.feedback = function () {
+  $scope.feedback = function() {
     var link = 'http://liteneo.com';
     NWService.openLink(link);
   }
-  $scope.$on('running', function(event, data){
+  $scope.$on('running', function(event, data) {
     $timeout(function() {
-      if(data)
+      if (data)
         return $scope.start();
       return $scope.stop();
     })
   })
-  if($scope.running) {
+  if ($scope.running) {
     $timeout(function() {
       $scope.start();
       NWService.setRunning(true);
     })
-  } 
+  }
 })
