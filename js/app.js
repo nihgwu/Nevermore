@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'reaki.services' is found in services.js
 // 'reaki.controllers' is found in controllers.js
-angular.module('app', ['pascalprecht.translate', 'app.directives', 'app.services', 'app.controllers'])
+angular.module('app', ['toggle-switch', 'pascalprecht.translate', 'app.directives', 'app.services', 'app.controllers'])
 /*
 .run(function($rootScope) {
 })
@@ -22,8 +22,8 @@ angular.module('app', ['pascalprecht.translate', 'app.directives', 'app.services
     SERVER_METHOD: 'Encryption',
     TIMEOUT: 'Timeout',
     LOCAL_PORT: 'Local Port',
-    BUTTON_START: 'Start',
-    BUTTON_STOP: 'Stop',
+    BUTTON_START: 'On',
+    BUTTON_STOP: 'Off',
     BUTTON_SAVE: 'Save',
     BUTTON_CANCEL: 'Cancel',
     BUTTON_ADD: 'Add',

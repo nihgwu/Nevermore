@@ -9,6 +9,12 @@ angular.module('app.controllers', [])
   $scope.running = DataService.getRunning();
   $scope.cursor = DataService.getSelected();
 
+  $scope.toggle = function() {
+    $scope.running = !($scope.running);
+    if ($scope.running) return $scope.stop();
+    return $scope.start();
+  }
+
   $scope.language = function(key) {
     $translate.use(key);
   }
@@ -117,6 +123,6 @@ angular.module('app.controllers', [])
     $timeout(function() {
       $scope.start();
       NWService.setRunning(true);
-    })
+    }, 5000)
   }
 })

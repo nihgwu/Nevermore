@@ -13,15 +13,25 @@
   },
   "window": {
     "icon": "img/icon.png",
+    "fullscreen": false,
+    "visible": false,
+    "always-on-top": true,
+    "as_desktop": true,
+    "title": "Nevermore",
+    "show_in_taskbar": false,
+    "resizable": false,
     "frame": false,
     "toolbar": false,
     "width": 300,
     "height": 400,
-    "position": "mouse",
+    "position": "center",
     "min_width": 300,
     "min_height": 400,
     "max_width": 500,
     "max_height": 400
+  },
+  "webkit": {
+    "page-cache": true
   },
   "js-flags": "--expose-gc",
   "licenses": [{
