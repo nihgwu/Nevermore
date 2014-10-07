@@ -6,6 +6,17 @@
 * 点关闭按钮是最小化到托盘，右击退出真正退出
 * 双击服务器名称或连接超时或本地端口修改参数
 
+
+#### 2014-10-07 v0.2beta 发布
+* 加入提示信息
+* 加入 angular-toggle-switch，服务状态更加清晰
+* 加入 angular-translate，提供多语言支持
+* 加入base64以及二维码分享功能
+* * 加入配置文件导入导出功能
+* bug修复
+
+目前仅提供osx版，暂无win环境，win版打包测试后上传 [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-osx.zip)
+
 #### 2014-09-19 v0.1 发布
 [下载Windows客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-win.zip) [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-osx.zip)
 
@@ -19,3 +30,4 @@
 
 ![主界面](./screenshots/1.png)   
 ![服务器列表](./screenshots/2.png)
+![分享界面](./screenshots/3.png)
