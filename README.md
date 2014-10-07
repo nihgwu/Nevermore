@@ -12,10 +12,8 @@
 * 加入 angular-toggle-switch，服务状态更加清晰
 * 加入 angular-translate，提供多语言支持
 * 加入base64以及二维码分享功能
-* * 加入配置文件导入导出功能
+* 加入配置文件导入导出功能
 * bug修复
-
-目前仅提供osx版，暂无win环境，win版打包测试后上传 [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-osx.zip)
 
 #### 2014-09-19 v0.1 发布
 [下载Windows客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-win.zip) [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-osx.zip)
