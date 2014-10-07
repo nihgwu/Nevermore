@@ -1,5 +1,20 @@
 angular.module('app.services', [])
 
+.service('ShareService', function() {
+  var qr = require('qr-image');
+
+  this.base64 = function(server) {
+    var config = [server.method, ':', server.password, '@', server.ip, ':', server.port].join('');
+    var string = new Buffer(config).toString('base64');
+    return 'ss://' + string;
+  }
+  this.qrcode = function(string) {
+    return qr.imageSync(string, {
+      type: 'svg'
+    });
+  }
+})
+
 .service('ServerService', function($timeout) {
   var ss = require('shadowsocks');
   var client = null;
@@ -36,6 +51,12 @@ angular.module('app.services', [])
   var gui = require('nw.gui');
   var os = require('os');
 
+  var clipboard = gui.Clipboard.get();
+
+  this.copy = function(text) {
+    clipboard.set(text, 'text');
+  }
+
   var win = gui.Window.get();
   win.on('maximize', function() {
     return;
@@ -49,10 +70,13 @@ angular.module('app.services', [])
   win.on('close', function() {
     hideWin();
   });
+  win.on('blur', function() {
+    //hideWin();
+  });
 
   var hideWin = function() {
     self.show = false;
-    hideItem.label = '显示';
+    hideItem.label = 'Show';
     return win.hide();
   }
   this.hideWin = hideWin;
@@ -70,7 +94,7 @@ angular.module('app.services', [])
   tray.on('click', function() {
     if (!self.show) win.show();
     self.show = true;
-    hideItem.label = '隐藏';
+    hideItem.label = 'Hide';
     return win.focus();
   });
   this.running = false;
@@ -82,20 +106,20 @@ angular.module('app.services', [])
       $rootScope.$broadcast('running', !self.running);
     }
   });
-  this.show = true;
+  this.show = false;
   var hideItem = new gui.MenuItem({
     type: 'normal',
-    label: '隐藏',
+    label: 'Show',
     click: function() {
       self.show = !self.show;
-      this.label = self.show ? '隐藏' : '显示';
+      this.label = self.show ? 'Hide' : 'Show';
       if (self.show) return win.show();
       return win.hide();
     }
   });
   var quitItem = new gui.MenuItem({
     type: 'normal',
-    label: '退出',
+    label: 'Quit',
     click: function() {
       return win.close(true);
     }
@@ -123,13 +147,7 @@ angular.module('app.services', [])
   this.getServers = function() {
     if (localStorage.servers)
       return angular.fromJson(localStorage.servers);
-    return [{
-      name: 'Public Server',
-      ip: '209.141.36.62',
-      port: 8348,
-      password: '$#HAL9000!',
-      method: 'aes-256-cfb'
-    }]
+    return [];
   }
   this.setServers = function(servers) {
     localStorage.servers = angular.toJson(servers);
@@ -146,16 +164,22 @@ angular.module('app.services', [])
   this.setRunning = function(running) {
     localStorage.running = running;
   }
-  this.getSetting = function() {
-    if (localStorage.setting)
-      return angular.fromJson(localStorage.setting);
-    return localStorage.setting || {
+  this.getLocal = function() {
+    if (localStorage.local)
+      return angular.fromJson(localStorage.local);
+    return {
       localport: 1080,
       timeout: 600
     }
   }
-  this.setSetting = function(setting) {
-    localStorage.setting = angular.toJson(setting);
+  this.setLocal = function(local) {
+    localStorage.local = angular.toJson(local);
+  }
+  this.getLanguage = function() {
+    return localStorage.language || 'en';
+  }
+  this.setLanguage = function(lang) {
+    localStorage.language = lang;
   }
 
   this.methods = [{

@@ -13,6 +13,7 @@
   "dependencies": {
     "angular": "~1.2.24",
     "angular-translate": "~2.4.0",
-    "angular-toggle-switch": "~1.0.0"
+    "angular-toggle-switch": "~1.0.0",
+    "font-awesome": "~4.2.0"
   }
 }

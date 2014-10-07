@@ -2,21 +2,23 @@
   "name": "Nevermore",
   "main": "index.html",
   "description": "shadowsocks client powered by Nodejs",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "keywords": [
+    "Nevermore",
     "shadowsocks",
-    "node-webkit"
+    "node-webkit",
+    "angular.js"
   ],
   "single-instance": true,
   "dependencies": {
-    "shadowsocks": "*"
+    "qr-image": "^2.0.0",
+    "shadowsocks": "^1.5.0"
   },
   "window": {
     "icon": "img/icon.png",
     "fullscreen": false,
     "visible": false,
     "always-on-top": true,
-    "as_desktop": true,
     "title": "Nevermore",
     "show_in_taskbar": false,
     "resizable": false,
