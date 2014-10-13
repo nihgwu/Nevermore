@@ -2,7 +2,7 @@
   "name": "Nevermore",
   "main": "index.html",
   "description": "shadowsocks client powered by Nodejs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "Nevermore",
     "shadowsocks",
@@ -12,7 +12,7 @@
   "single-instance": true,
   "dependencies": {
     "qr-image": "^2.0.0",
-    "shadowsocks": "^1.5.0"
+    "shadowsocks": "^1.5.2"
   },
   "window": {
     "icon": "img/icon.png",

@@ -6,9 +6,14 @@
 * 点关闭按钮是最小化到托盘，右击退出真正退出
 * 双击服务器名称或连接超时或本地端口修改参数
 
+欢迎提交 issue 或者到我的博客反馈意见 http://liteneo.com
 
-#### 2014-10-07 v0.2beta 发布
-[下载Windows客户端](http://liteneo.qiniudn.com/Nevermore%2FNevermore-v0.2.0-win.zip) [下载MacOS客户端](http://liteneo.qiniudn.com/Nevermore%2FNevermore-v0.2.0-osx.zip)
+#### 2014-10-13 v0.2.1 发布
+[下载Windows客户端](http://kanboxshare.com/link/2iTPv5caJmzS0nza18KCGzlQ23qNsJyE36Scgf7tJ6x91MdAdfzlYWdnPRqTlxXD3IyAc) [下载MacOS客户端](http://kanboxshare.com/link/6rm1CnQANEIABFUpjjjfQkZcF6gfAG7H7CMhwQ6By89dCzoR4AHZ3Ks3Ulg9CJ3m7zOqv)
+* 更新 shadowsocks-nodejs 至 v1.5.2
+
+#### 2014-10-07 v0.2.0 发布
+[下载Windows客户端](http://kanboxshare.com/link/CPhy4Neb0r1ZH83SKdIT0hPV3N7A5fawNegcP9ol0eE401i3QwPhaYoMyc7QvUoIZb8cb) [下载MacOS客户端](http://kanboxshare.com/link/ZTYmDJzpu1bsiMYntgOeSeIqEKtoj88qaqXOQgeqtfoXj4MjnDrY5LBBTtt1RcqpabJ71)
 * 加入提示信息
 * 加入 angular-toggle-switch，服务状态更加清晰
 * 提供多语言支持(angular-translate)
@@ -16,11 +21,10 @@
 * 加入配置文件导入导出功能
 * bug修复
 
-#### 2014-09-19 v0.1 发布
-[下载Windows客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-win.zip) [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1/Nevermore-v0.1-osx.zip)
+#### 2014-09-19 v0.1.0 发布
+[下载Windows客户端](http://kanboxshare.com/link/ECvwMA7aMLlXeUMY8dHA92hjHynUMTNlFf3i8pPjHPQK7FaoWNItDCOPCQocVB6vFdlTY) [下载MacOS客户端](http://kanboxshare.com/link/3u4mw0ZlaYIsSTLPQjSCd5uBR3xtTxPm4V09UuQMdHHPVEZku0EDmP1tftk3IxwhQyvLz)
 
 #### 2014-09-16 v0.1beta 发布
-[下载Windows客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1beta/Nevermore-v0.1beta-win.zip) [下载MacOS客户端](https://github.com/nihgwu/Nevermore/releases/download/v0.1beta/Nevermore-v0.1beta-osx.zip)
 
 #### TODO
 * 设置界面，加入多语言、皮肤等
